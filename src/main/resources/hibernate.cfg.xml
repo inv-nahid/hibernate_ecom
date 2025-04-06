@@ -1,0 +1,27 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Connection -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/ecom?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">Slytherin07</property>
+        <property name="connection.pool_size">1</property>
+
+        <!-- Hibernate Configuration -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Entity mappings -->
+        <mapping class="org.example.Entity.Category"/>
+        <mapping class="org.example.Entity.Product"/>
+        <mapping class="org.example.Entity.Orders"/>
+        <mapping class="org.example.Entity.OrderDetails"/>
+        <mapping class="org.example.Entity.Users"/>
+    </session-factory>
+</hibernate-configuration>
