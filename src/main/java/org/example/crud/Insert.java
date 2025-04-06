@@ -31,7 +31,7 @@ public class Insert {
 //        session.persist(p2);
 //        session.persist(p3);
 
-//        Users user = new Users("Kunal Sharma","kunal123","asd@gmail.com", Users.Role.ADMIN);
+//        Users user = new Users("Max Verstappen","max23","asd@gmail.com", Users.Role.ADMIN);
 //        Users user1 = new Users("Joseph jones","jos123","ks@gmail.com", Users.Role.CUSTOMER);
 //
 //        session.persist(user);
